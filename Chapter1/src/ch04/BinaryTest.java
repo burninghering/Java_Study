@@ -4,10 +4,11 @@ public class BinaryTest {
 
 	public static void main(String[] args) {
 		int num = 10;
-		int bNum = 0B1010; //(0B·Î ½ÃÀÛÇÏ¸é µÚ ¼ıÀÚ´Â 2Áø¼ö(Binary)ÀÌ´Ù)
-		int oNum = 012; //(0À¸·Î ½ÃÀÛÇÏ¸é µÚ ¼ıÀÚ´Â 8Áø¼ö´Ù)
-		int xNum = 0XA; //(0X·Î ½ÃÀÛÇÏ¸é µÚ ¼ıÀÚ´Â 16Áø¼ö´Ù)
+		int bNum = 0B1010; /* (0Bë¡œ ì‹œì‘í•˜ë©´ ë’¤ ìˆ«ìëŠ” 2ì§„ìˆ˜(Binary)ì´ë‹¤) */
+		int oNum = 012; /* (0ìœ¼ë¡œ ì‹œì‘í•˜ë©´ ë’¤ ìˆ«ìëŠ” 8ì§„ìˆ˜ë‹¤) */
+		int xNum = 0XA; /* (0Xìœ¼ë¡œ ì‹œì‘í•˜ë©´ ë’¤ ìˆ«ìëŠ” 16ì§„ìˆ˜ë‹¤) */
 		
+	
 		System.out.println(num);
 		System.out.println(bNum);
 		System.out.println(oNum);
