@@ -10,4 +10,5 @@ public class DoubleTest {
 		System.out.println(dnum);
 		System.out.println(fnum);
 	}
+
 }
