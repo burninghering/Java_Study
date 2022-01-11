@@ -2,7 +2,7 @@ package ch16;
 
 public class Employee {
 	
-	public static int serialNum=1000;
+	private static int serialNum=1000;
 	
 	private int employeeId;
 	private String employeeName;
@@ -13,7 +13,14 @@ public class Employee {
 		employeeId=serialNum;
 	}
 	
-//속성 변수를 private로 만들고, get/set으로 변수 오용되는 것 막기! 
+public static int getSerialNum() { //static 메소드
+		int i=0;
+		employeeName="Lee";
+		
+		return serialNum;
+	}
+
+	//속성 변수를 private로 만들고, get/set으로 변수 오용되는 것 막기! 
 	public int getEmployeeId() {
 		return employeeId;
 	}
