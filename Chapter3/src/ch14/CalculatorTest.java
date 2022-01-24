@@ -16,12 +16,9 @@ public class CalculatorTest {
 		System.out.println(calc.times(num1, num2));
 		System.out.println(calc.divide(num1, num2));
 		
-		calc.description();
+		calc.description(); //인터페이스를 구현한 클래스의 인스턴스로 사용가능(defalut 메소드)
 		
 		int[] arr = {1,2,3,4,5};
-		System.out.println(Calc.total(arr)); //객체 생성 없이, 인터페이스 이름으로 바로 호출 
-		
-		
-		
+		System.out.println(Calc.total(arr)); //객체 생성 없이, 인터페이스 이름으로 바로 호출(static 메소드) 
 	}
 }
