@@ -11,15 +11,12 @@ class Book{
 	}
 
 	@Override
-	public String toString() {
+	public String toString() { //toString() 오버라이딩해서 재정의하기 
+		
 		return title+","+author;
-	}
-	
-	
+	}	
 }	
-	
-	
-	
+
 public class BookTest{
 	public static void main(String[] args) {
 		
