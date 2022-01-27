@@ -7,11 +7,13 @@ public class StringBuilderTest {
 		String android = new String("android");
 		
 		StringBuilder buffer = new StringBuilder(java);
-		System.out.println(System.identityHashCode(buffer));
-		buffer.append("android");
-		System.out.println(System.identityHashCode(buffer));
+		System.out.println(System.identityHashCode(buffer)); //연결하기 전의 값
 		
-		java = buffer.toString();
+		buffer.append(android);
+		System.out.println(System.identityHashCode(buffer));//연결 후의 값
+		
+		String test = buffer.toString();
+		System.out.println(test);
 		
 	}
 }
