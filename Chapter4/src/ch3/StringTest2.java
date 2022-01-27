@@ -8,7 +8,7 @@ public class StringTest2 {
 		System.out.println(System.identityHashCode(java));
 		
 		java = java.concat(android); //java에 assign을 했다(배정, 연결을 했다)
-		System.out.println(java);
+		System.out.println(java); //javaandroind에 연결이 됐다.
 		System.out.println(System.identityHashCode(java));
 		
 	}
