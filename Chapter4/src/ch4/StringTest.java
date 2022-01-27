@@ -19,6 +19,7 @@ public class StringTest {
 		for(Method mth : m) {
 			System.out.println(mth);
 		}
+
 	}
 
 }
