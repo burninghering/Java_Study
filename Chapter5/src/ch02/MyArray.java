@@ -33,7 +33,7 @@ public class MyArray {
 	}
 
 	public void insertElement(int position, int num) //인덱스, 넣으려는 요소
-	//마지막 위치에서 포지션까지의 위치를 하나씩 오른쪽으로 밀고 포지션에 요소를 넣자
+	//마지막 위치(count-1)에서 포지션까지의 위치를 하나씩 오른쪽으로 밀고 포지션에 요소를 넣자
 	{
 		int i; //인덱스
 		
@@ -54,27 +54,27 @@ public class MyArray {
 		
 	}
 	
-	public int removeElement(int position)
+	public int removeElement(int position) //삭제하려는 위치까지 마지막 요소들이 왼쪽으로 이동하면 된다.
 	{
-		int ret = ERROR_NUM;
+		int ret = ERROR_NUM; //반환값
 		
-		if( isEmpty() ){
-			System.out.println("There is no element");
+		if  (isEmpty()){
+			System.out.println("Array is empty");
 			return ret;
 		}
 		
-		if(position < 0 || position >= count ){  //index error
-			System.out.println("remove Error");
+		if (position<0 || position > count-1) {
 			return ret;
 		}
 		
 		ret = intArr[position];
 		
-		for(int i = position; i<count -1; i++ )
-		{
-			intArr[i] = intArr[i+1];
+		for (int i=position; i<count-1;i++) {
+			intArr[i]=intArr[i+1];
 		}
+		
 		count--;
+		
 		return ret;
 	}
 	
