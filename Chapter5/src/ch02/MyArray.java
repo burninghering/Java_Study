@@ -11,8 +11,8 @@ public class MyArray {
 	public MyArray()
 	{
 		count = 0;
-		ARRAY_SIZE = 10;
-		intArr = new int[ARRAY_SIZE];
+		ARRAY_SIZE = 10; //배열 사이즈 10
+		intArr = new int[ARRAY_SIZE]; //사이즈 10으로 시작
 	}
 	
 	public MyArray(int size)
@@ -28,30 +28,30 @@ public class MyArray {
 			System.out.println("not enough memory");
 			return;
 		}
-		intArr[count++] = num;
+		intArr[count++] = num; //num 넣고 나서 count(개수) 증가 
 				
 	}
 
-	public void insertElement(int position, int num)
+	public void insertElement(int position, int num) //인덱스, 넣으려는 요소
+	//마지막 위치에서 포지션까지의 위치를 하나씩 오른쪽으로 밀고 포지션에 요소를 넣자
 	{
-		int i;
+		int i; //인덱스
 		
-		if(count >= ARRAY_SIZE){  //꽉 찬 경우
-			System.out.println("not enough memory");
+		if (position<0 || position> count) {
 			return;
 		}
 		
-		if(position < 0 || position > count ){  //index error
-			System.out.println("insert Error");
+		if (count>=ARRAY_SIZE) { //배열 꽉 찼을 때
 			return;
 		}
 		
-		for( i = count-1; i >= position ; i--){
-			intArr[i+1]  = intArr[i];        // 하나씩 이동
+		for (i=count-1; i>=position; i++) {
+			intArr[i+1]=intArr[i];
 		}
 		
-		intArr[position] = num;
+		intArr[position]=num;
 		count++;
+		
 	}
 	
 	public int removeElement(int position)
