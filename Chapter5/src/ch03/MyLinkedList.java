@@ -69,7 +69,7 @@ public class MyLinkedList {
 			return null;
 		}
 		
-		if(position == 0){  //맨 앞을 삭제하는
+		if(position == 0){  //맨 앞을 삭제하는 경우
 			head = tempNode.next;
 		}
 		else{
