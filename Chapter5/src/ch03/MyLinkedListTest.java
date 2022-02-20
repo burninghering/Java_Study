@@ -9,11 +9,11 @@ public class MyLinkedListTest {
 		list.addElement("B");
 		list.addElement("C");
 		list.printAll();
-		list.insertElement(3, "D");
+		list.insertElement(3, "D"); //3의 위치에 D를 넣어라
 		list.printAll();
-		list.removeElement(0);
+		list.removeElement(0); //맨 앞 노드를 지워라(head)
 		list.printAll();
-		list.removeElement(1);
+		list.removeElement(1); //첫 번째 노드를 지워라 (B->D)
 		list.printAll();
 						
 		list.insertElement(0, "A-1");
