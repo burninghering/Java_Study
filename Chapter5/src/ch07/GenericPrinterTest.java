@@ -5,7 +5,7 @@ public class GenericPrinterTest {
 	public static void main(String[] args) {
 		
 		Powder powder = new Powder();
-		GenericPrinter<Powder> powderPrinter = new GenericPrinter<>(); // <> -> 다이아몬드 연산자!
+		GenericPrinter<Powder> powderPrinter = new GenericPrinter<>(); // Powder가 Material에서 상속을 받지 않으면 오류가 난다 
 		powderPrinter.setMaterial(powder);
 		
 		Powder p = powderPrinter.getMaterial();
