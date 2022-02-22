@@ -1,10 +1,14 @@
-package ch12;
+package ch13;
 
-public class Member {
+import java.util.Comparator;
+
+public class Member implements Comparator<Member>{
 	
 	private int memberId;        //회원 아이디
 	private String memberName;   //회원 이름
 
+	public Member() {}
+	
 	public Member(int memberId, String memberName){ //생성자
 		this.memberId = memberId;
 		this.memberName = memberName;
@@ -47,5 +51,9 @@ public class Member {
 		return memberName + " 회원님의 아이디는 " + memberId + "입니다";
 	}
 
+	@Override
+	public int compare(Member member1, Member member2) {
+		return (member1.memberId-member2.memberId);
+	}
 }
 
