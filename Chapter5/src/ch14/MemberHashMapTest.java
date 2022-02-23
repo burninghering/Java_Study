@@ -17,7 +17,7 @@ public class MemberHashMapTest {
 		
 		memberHashMap.showAllMember();	//member에 대한 toString이 호출
 		
-		HashMap<Integer,String> hashMap = new HashMap<Integer,String>();
+		HashMap<Integer,String> hashMap = new HashMap<Integer,String>(); //key,value pair로 나오게 하기
 		hashMap.put(1001, "Kim");
 		hashMap.put(1002, "Lee");
 		hashMap.put(1003, "Park");
